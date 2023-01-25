@@ -11,8 +11,9 @@ function Def (html) {
                 <link rel='stylesheet' href='css/style.css'/>
             </head>
             <body>
-                <nav class='navbar navbar-dark bg-primary'>
-                    <ul class='nav-ul'>
+                <nav className='navbar-center navbar-dark bg-primary'>
+                    <div className='nav-contents'>
+                    <ul>
                         <li>
                             <a href='/'>Home</a>
                         </li>
@@ -23,6 +24,7 @@ function Def (html) {
                             <a href='/places/new'>Add Place</a>
                         </li>
                     </ul>
+                    </div>
                 </nav>
                 {html.children}
             </body>
