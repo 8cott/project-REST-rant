@@ -1,11 +1,12 @@
 const React = require('react')
-const Def = require('../default.jsx')
+const Def = require('../default')
 
 function edit_form (data) {
     return (
         <Def>
             <main>
-            <form method="POST" action={`/places/${data.place.id}?_method=PUT`}>
+            <form method="POST" action={`/places/${data.id}?_method=PUT`}> 
+            {/* changed ${data.places.id} to ${data.id} */}
                 <div className='row'>
                     <div className='form-group col-sm-6'>
                         <label htmlFor='name'>Place Name</label>
