@@ -13,7 +13,8 @@ function show (data) {
                 <ul className='list-group list-group-flush'>
                   <li className='list-group-item'>{ data.place.city }</li>
                   <li className='list-group-item'>{ data.place.state }</li>
-                  <li className='list-group-item'>{ data.place.cuisines }</li>    
+                  <li className='list-group-item'>{ data.place.cuisines }</li>
+                  <li className='list-group-item'>Founded: { data.place.founded }</li>        
                 </ul>
             </div>
             <br />
