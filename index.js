@@ -1,6 +1,8 @@
 // Modules and Globals
 require('dotenv').config()
 const express = require('express')
+const favicon = require('serve-favicon')
+const path = require('path')
 const methodOverride = require('method-override')
 const app = express()
 
@@ -14,6 +16,7 @@ app.use(express.static(__dirname + '/public'));
 // Middleware
 app.use(express.urlencoded({ extended: true }))
 app.use(methodOverride('_method'))
+app.use(favicon(path.join(__dirname,'public','images','favicon.ico')));
 
 // Controllers & Routes
 app.use('/places', require('./controllers/places'))

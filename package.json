@@ -16,6 +16,7 @@
     "method-override": "^3.0.0",
     "mongoose": "^6.9.0",
     "react": "^16.14.0",
-    "react-dom": "16.14.0"
+    "react-dom": "16.14.0",
+    "serve-favicon": "^2.5.0"
   }
 }
