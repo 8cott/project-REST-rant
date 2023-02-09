@@ -48,6 +48,4 @@ function new_form (data) {
     
 }
 
-
-
 module.exports = new_form

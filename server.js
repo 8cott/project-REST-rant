@@ -32,7 +32,7 @@ app.get('*', (req, res) => {
     res.render('error404') 
 })
 
-// Listen for Connections
+// Listen for Connections 
 app.listen(PORT, () => console.log(`Server is running in port ${PORT}`))
 
 module.exports = app;
